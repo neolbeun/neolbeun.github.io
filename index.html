@@ -4,8 +4,61 @@
     <link rel="icon" href="asset/neolbeun.png"/>
     <link rel="apple-touch-icon" href="asset/neolbeun.png"/>
     <title>별똥별 없이 시드 찾기</title>
+	<style>
+		div {
+			text-align: center;
+		}
+		
+		label {
+			font-family: 'S-CoreDream-3Light', sans-serif;
+			font-size: 18px;
+			color: #feffee;
+			padding-right: 5px;
+		}
+		
+		option, select {
+			font-family: 'S-CoreDream-3Light', sans-serif;
+			font-size: 15px;
+			color: #3f3f3f;
+		}
+		
+		@font-face {
+			font-family: 'PyeongChangPeace-Bold';
+			src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+			font-weight: 700;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'S-CoreDream-3Light';
+			src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
+			font-weight: normal;
+			font-style: normal;
+		}
+		
+		.main-title {
+			font-family: 'PyeongChangPeace-Bold', sans-serif;
+			font-size: 80px;
+			color: #feffee;
+		}
+		
+		
+	</style>
+	
   </head>
   <body bgcolor="#1C844F">
-    <p>별없시</p>
+	<div>
+		<p class="main-title">별똥별 없이 시드 찾기</p>
+		<form>
+			<label>10시의 날씨</label>
+			<select>
+			<option selected>맑음</option>
+			<option>화창함</option>
+			<option>흐림</option>
+			<option>비구름</option>
+			<option>비/눈</option>
+			<option>폭우/폭설</option>
+		</form>
+	</div>
   </body>
 </html>
