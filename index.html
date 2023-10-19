@@ -40,9 +40,20 @@
 			font-family: 'PyeongChangPeace-Bold', sans-serif;
 			font-size: 80px;
 			color: #feffee;
+		}		
+		
+		-select {
+			width: 200px; /* 원하는 너비설정 */
+			padding: .8em .5em; /* 여백으로 높이 설정 */
+			background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%; /* 네이티브 화살표 대체 */  
+			background-color: #FFFFFF;
+			border: 1px solid #999; 
+			border-radius: 0px; /* iOS 둥근모서리 제거 */
+			-webkit-appearance: none; /* 네이티브 외형 감추기 */
+			-moz-appearance: none;
+			appearance: none;
 		}
-		
-		
+
 	</style>
 	
   </head>
@@ -50,7 +61,7 @@
   <script src="source.js"></script>
 	<div>
 		<p class="main-title">별똥별 없이 시드 찾기</p>
-		<form id="10am" onchange="showElementByName('12pm');">
+		<form id="10am" onchange="setDisplayElementByName('12pm', 'block');">
 			<label>10시의 날씨</label>
 			<select>
 			<option selected>맑음</option>
@@ -61,7 +72,7 @@
 			<option>폭우/폭설</option>
 			</select>
 		</form>
-		<form id="12pm" onchange="showElementByName('1pm');" style="display:none">
+		<form id="12pm" onchange="setDisplayElementByName('1pm', 'block');" style="display:none">
 			<label>12시의 날씨</label>
 			<select>
 			<option selected>맑음</option>
@@ -72,7 +83,7 @@
 			<option>폭우/폭설</option>
 			</select>
 		</form>
-		<form id="1pm" onchange="" style="display:none">
+		<form id="1pm" onchange="setDisplayElementByName('resetBtn', 'inline');" style="display:none">
 			<label>13시의 날씨</label>
 			<select>
 			<option selected>맑음</option>
@@ -83,7 +94,7 @@
 			<option>폭우/폭설</option>
 			</select>
 		</form>
-
+		<button id="resetBtn" onClick="resetFroms();" style="display:none">다음 날</button>
 	</div>
   </body>
 </html>
