@@ -6,9 +6,16 @@
     <title>별똥별 없이 시드 찾기</title>
 	<style>
 		@font-face {
-			font-family: 'PyeongChangPeace-Bold';
+			font-family: 'PyeongChangPeace';
 			src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
 			font-weight: 700;
+			font-style: normal;
+		}
+		
+		@font-face {
+			font-family: 'PyeongChangPeace';
+			src: url('./fonts/PyeongChangPeace-Light.woff') format('woff2');
+			font-weight: 300;
 			font-style: normal;
 		}
 		
@@ -53,7 +60,7 @@
 		
 		label {
 			font-family: 'S-CoreDream', sans-serif;
-			font-weight: 400;
+			font-weight: 500;
 			font-size: 20px;
 			color: #feffee;
 			padding-right: 10px;
@@ -61,13 +68,14 @@
 		
 		option, select {
 			font-family: 'S-CoreDream', sans-serif;
-			font-weight: 300;
+			font-weight: 400;
 			font-size: 15px;
 			color: #3f3f3f;
 		}
 		
 		.main-title {
-			font-family: 'PyeongChangPeace-Bold', sans-serif;
+			font-family: 'PyeongChangPeace', sans-serif;
+			font-weight:300;
 			font-size: 70px;
 			color: #feffee;
 		}
@@ -79,8 +87,13 @@
 		.content {
 			min-height: calc(60vh - 150px);
 		}
+		
+		.warn {
+			font-family: 'S-CoreDream', sans-serif;
+			font-weight: 500;
+		}
 
-		footer {
+		footer, .msg {
 			font-family: 'S-CoreDream', sans-serif;
 			font-weight: 400;
 			color: #feffee;
@@ -189,7 +202,7 @@
 			</select>
 		</form>
 		<button id="resetBtn" onClick="resetFroms();" style="display:none">다음 날!</button>
-		<span id="warnMessage" style="display:none">입력에 문제가 있습니다! 다시 한 번 확인해주세요🙂</span>
+		<span id="warnMessage" style="display:none" class="msg"><a class="warn">[ ! ]</a> 입력에 문제가 있으니 다시 한 번 확인해주세요 :(</span>
 	</div>
 	<footer>
 		<div>
