@@ -118,7 +118,6 @@ function setDisplayElementByName(id,display) {
 function _resetForm(id) {
 	const el = document.getElementById(id);
 
-	// set select as default option (맑음)
 	el.lastElementChild.selectedIndex = 0;
 	
 	return;
@@ -167,14 +166,14 @@ function updatePage() {
 			}
 		}
 	}
-	// remove 
 
 	State = collectInput();
 	const vis = db[encode(State)];
 	
 	if (vis == undefined) {
-		// perform exceptions
-		console.log("입력에 문제가 있습니다! 다시 한 번 확인해주세요🙂", State);
+		setDisplayElementByName("warnMessage", "block");
+		// button
+		setDisplayElementByName("resetBtn", "none");
 	} else {
 		for (i = 0; i < 5; ++i) {
 			display = vis[i] == "1" ? "block" : "none";
@@ -183,7 +182,10 @@ function updatePage() {
 		// button
 		display = vis[5] == "1" ? "inline" : "none";
 		setDisplayElementByName("resetBtn", display);
+		// warn Message
+		setDisplayElementByName("warnMessage", "none");
 	}
 	
 	return;
 }
+
