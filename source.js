@@ -154,7 +154,7 @@ function collectInput() {
 	return values;
 }
 
-function updatePage() {
+function updatePage(idx) {
 	const newState = collectInput();
 	const selectList = ["10am", "11am", "12pm", "1pm", "2pm"];
 	
@@ -174,6 +174,9 @@ function updatePage() {
 		setDisplayElementByName("warnMessage", "block");
 		// button
 		setDisplayElementByName("resetBtn", "none");
+		for (i = idx + 1; i < 5; ++i) {
+			setDisplayElementByName(selectList[i], "none");
+		}
 	} else {
 		for (i = 0; i < 5; ++i) {
 			display = vis[i] == "1" ? "block" : "none";
