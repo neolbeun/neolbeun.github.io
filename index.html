@@ -47,9 +47,10 @@
 	
   </head>
   <body bgcolor="#1C844F">
+  <script src="source.js"></script>
 	<div>
 		<p class="main-title">별똥별 없이 시드 찾기</p>
-		<form>
+		<form id="10am" onchange="showElementByName('12pm');">
 			<label>10시의 날씨</label>
 			<select>
 			<option selected>맑음</option>
@@ -58,7 +59,31 @@
 			<option>비구름</option>
 			<option>비/눈</option>
 			<option>폭우/폭설</option>
+			</select>
 		</form>
+		<form id="12pm" onchange="showElementByName('1pm');" style="display:none">
+			<label>12시의 날씨</label>
+			<select>
+			<option selected>맑음</option>
+			<option>화창함</option>
+			<option>흐림</option>
+			<option>비구름</option>
+			<option>비/눈</option>
+			<option>폭우/폭설</option>
+			</select>
+		</form>
+		<form id="1pm" onchange="" style="display:none">
+			<label>13시의 날씨</label>
+			<select>
+			<option selected>맑음</option>
+			<option>화창함</option>
+			<option>흐림</option>
+			<option>비구름</option>
+			<option>비/눈</option>
+			<option>폭우/폭설</option>
+			</select>
+		</form>
+
 	</div>
   </body>
 </html>
