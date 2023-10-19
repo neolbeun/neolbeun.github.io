@@ -174,8 +174,7 @@ function updatePage() {
 	
 	if (vis == undefined) {
 		// perform exceptions
-		alert("입력에 문제가 있습니다! 다시 한 번 확인해주세요🙂");
-		resetFroms();
+		console.log("입력에 문제가 있습니다! 다시 한 번 확인해주세요🙂", State);
 	} else {
 		for (i = 0; i < 5; ++i) {
 			display = vis[i] == "1" ? "block" : "none";
