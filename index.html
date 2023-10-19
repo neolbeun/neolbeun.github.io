@@ -5,23 +5,6 @@
     <link rel="apple-touch-icon" href="asset/neolbeun.png"/>
     <title>별똥별 없이 시드 찾기</title>
 	<style>
-		div {
-			text-align: center;
-		}
-		
-		label {
-			font-family: 'S-CoreDream-3Light', sans-serif;
-			font-size: 18px;
-			color: #feffee;
-			padding-right: 5px;
-		}
-		
-		option, select {
-			font-family: 'S-CoreDream-3Light', sans-serif;
-			font-size: 15px;
-			color: #3f3f3f;
-		}
-		
 		@font-face {
 			font-family: 'PyeongChangPeace-Bold';
 			src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
@@ -30,10 +13,57 @@
 		}
 		
 		@font-face {
-			font-family: 'S-CoreDream-3Light';
-			src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/S-CoreDream-3Light.woff') format('woff');
-			font-weight: normal;
+			font-family: 'S-CoreDream';
+			src: url('./fonts/scdream3-webfont.woff') format('woff');
 			font-style: normal;
+			font-weight: 300;
+		}
+		
+		@font-face {
+			font-family: 'S-CoreDream';
+			src: url('./fonts/scdream4-webfont.woff') format('woff');
+			font-style: normal;
+			font-weight: 400;
+		}
+		
+		@font-face {
+			font-family: 'S-CoreDream';
+			src: url('./fonts/scdream5-webfont.woff') format('woff');
+			font-style: normal;
+			font-weight: 500;
+		}
+		
+		@font-face {
+			font-family: 'S-CoreDream';
+			src: url('./fonts/scdream6-webfont.woff') format('woff');
+			font-style: normal;
+			font-weight: 600;
+		}
+		
+		@font-face {
+			font-family: 'S-CoreDream';
+			src: url('./fonts/scdream7-webfont.woff') format('woff');
+			font-style: normal;
+			font-weight: 700;
+		}
+		
+		div {
+			text-align: center;
+		}
+		
+		label {
+			font-family: 'S-CoreDream', sans-serif;
+			font-weight: 400;
+			font-size: 20px;
+			color: #feffee;
+			padding-right: 10px;
+		}
+		
+		option, select {
+			font-family: 'S-CoreDream', sans-serif;
+			font-weight: 300;
+			font-size: 15px;
+			color: #3f3f3f;
 		}
 		
 		.main-title {
@@ -43,7 +73,7 @@
 		}	
 		
 		.content {
-			min-height: calc(100vh - 150px);
+			min-height: calc(60vh - 150px);
 		}
 
 		footer {
@@ -51,13 +81,28 @@
 			height: 150px;
 		}
 		
-		-select {
-			width: 200px; /* 원하는 너비설정 */
-			padding: .8em .5em; /* 여백으로 높이 설정 */
+		form {
+			padding-bottom: 10px;
+		}
+		
+		button {
+			font-family: 'S-CoreDream', sans-serif;
+			font-weight : 600;
+			font-size: 15px;
+			color: #3f3f3f;
+			margin-top: 20px;
+			padding: 5px 15px;
+			border-radius: 10px;
+			border: 1px;
+		}
+		
+		select {
+			width: 150px; /* 원하는 너비설정 */
+			padding: .6em .5em; /* 여백으로 높이 설정 */
 			background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%; /* 네이티브 화살표 대체 */  
 			background-color: #FFFFFF;
 			border: 1px solid #999; 
-			border-radius: 0px; /* iOS 둥근모서리 제거 */
+			border-radius: 10px; /* iOS 둥근모서리 제거 */
 			-webkit-appearance: none; /* 네이티브 외형 감추기 */
 			-moz-appearance: none;
 			appearance: none;
