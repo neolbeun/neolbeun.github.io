@@ -68,17 +68,28 @@
 		
 		.main-title {
 			font-family: 'PyeongChangPeace-Bold', sans-serif;
-			font-size: 80px;
+			font-size: 70px;
 			color: #feffee;
-		}	
+		}
+		
+		.sns {
+			text-decoration: none;
+		}
 		
 		.content {
 			min-height: calc(60vh - 150px);
 		}
 
 		footer {
+			font-family: 'S-CoreDream', sans-serif;
+			font-weight: 400;
+			color: #feffee;
 			width: 100%;
 			height: 150px;
+		}
+		
+		a {
+			color: #fcffc5;
 		}
 		
 		form {
@@ -88,8 +99,9 @@
 		button {
 			font-family: 'S-CoreDream', sans-serif;
 			font-weight : 600;
-			font-size: 15px;
-			color: #3f3f3f;
+			font-size: 20px;
+			color: #1C844F;
+			background-color: #feffee;
 			margin-top: 20px;
 			padding: 5px 15px;
 			border-radius: 10px;
@@ -97,11 +109,11 @@
 		}
 		
 		select {
-			width: 150px; /* 원하는 너비설정 */
-			padding: .6em .5em; /* 여백으로 높이 설정 */
+			width: 140px; /* 원하는 너비설정 */
+			padding: .6em 1em; /* 여백으로 높이 설정 */
 			background: url(https://farm1.staticflickr.com/379/19928272501_4ef877c265_t.jpg) no-repeat 95% 50%; /* 네이티브 화살표 대체 */  
 			background-color: #FFFFFF;
-			border: 1px solid #999; 
+			border: 0px; 
 			border-radius: 10px; /* iOS 둥근모서리 제거 */
 			-webkit-appearance: none; /* 네이티브 외형 감추기 */
 			-moz-appearance: none;
@@ -175,17 +187,17 @@
 			<option>폭우/폭설</option>
 			</select>
 		</form>
-		<button id="resetBtn" onClick="resetFroms();" style="display:none">다음 날</button>
+		<button id="resetBtn" onClick="resetFroms();" style="display:none">다음 날!</button>
 	</div>
 	<footer>
 		<div>
-			<a href='https://www.youtube.com/@neol_beun' target='_blank'>Youtube</a> |
-			<a href='https://www.instagram.com/neol_beun' target='_blank'>Instagram</a>
+			<p>사이트 사용법은 <a href='https://www.youtube.com/watch?v=-mEDH_fhsSI' target='_blank'>이 영상</a>을 참고해주세요!</p>
+			<p>사용 관련 문의 / 오류 제보는 인스타그램 dm이나 메일을 통해 해주시면 됩니다.</p>
+			<a class='sns' href='https://www.youtube.com/@neol_beun' target='_blank'>Youtube</a> |
+			<a class='sns' href='https://www.instagram.com/neol_beun' target='_blank'>Instagram</a>
 		</div>
 		<div>
 			<span>email : neolbeun@gmail.com</span></br>
-			<span>span1 : span1</span></br>
-			<span>span2 : span2</span></br>
 		</div>
 	</footer>
   </body>
