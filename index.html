@@ -94,6 +94,7 @@
 		
 		form {
 			padding-bottom: 10px;
+			onchange: "updatePage();";
 		}
 		
 		button {
@@ -127,7 +128,7 @@
   <script src="source.js"></script>
 	<div class="content">
 		<p class="main-title">별똥별 없이 시드 찾기</p>
-		<form id="10am" onchange="setDisplayElementByName('12pm', 'block');">
+		<form id="10am" onchange="updatePage();">
 			<label>10시의 날씨</label>
 			<select>
 			<option selected>선택</option>
@@ -139,7 +140,7 @@
 			<option>폭우/폭설</option>
 			</select>
 		</form>
-		<form id="11am" onchange="setDisplayElementByName('1pm', 'block');" style="display:none">
+		<form id="11am" onchange="updatePage();" style="display:none">
 			<label>11시의 날씨</label>
 			<select>
 			<option selected>선택</option>
@@ -151,7 +152,7 @@
 			<option>폭우/폭설</option>
 			</select>
 		</form>
-		<form id="12pm" onchange="setDisplayElementByName('1pm', 'block');" style="display:none">
+		<form id="12pm" onchange="updatePage();" style="display:none">
 			<label>12시의 날씨</label>
 			<select>
 			<option selected>선택</option>
@@ -163,7 +164,7 @@
 			<option>폭우/폭설</option>
 			</select>
 		</form>
-		<form id="1pm" onchange="setDisplayElementByName('resetBtn', 'inline');" style="display:none">
+		<form id="1pm" onchange="updatePage();" style="display:none">
 			<label>13시의 날씨</label>
 			<select>
 			<option selected>선택</option>
@@ -175,7 +176,7 @@
 			<option>폭우/폭설</option>
 			</select>
 		</form>
-		<form id="2pm" onchange="setDisplayElementByName('resetBtn', 'inline');" style="display:none">
+		<form id="2pm" onchange="updatePage();" style="display:none">
 			<label>14시의 날씨</label>
 			<select>
 			<option selected>선택</option>
