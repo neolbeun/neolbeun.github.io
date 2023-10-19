@@ -7,7 +7,7 @@
 	<style>
 		@font-face {
 			font-family: 'PyeongChangPeace';
-			src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2206-02@1.0/PyeongChangPeace-Bold.woff2') format('woff2');
+			src: url('./fonts/PyeongChangPeace-Bold.woff') format('woff2');
 			font-weight: 700;
 			font-style: normal;
 		}
@@ -75,7 +75,7 @@
 		
 		.main-title {
 			font-family: 'PyeongChangPeace', sans-serif;
-			font-weight:300;
+			font-weight: 700;
 			font-size: 70px;
 			color: #feffee;
 		}
@@ -141,7 +141,7 @@
   <script src="source.js"></script>
 	<div class="content">
 		<p class="main-title">별똥별 없이 시드 찾기</p>
-		<form id="10am" onchange="updatePage(0);">
+		<form id="10am" onchange="updatePage();">
 			<label>10시의 날씨</label>
 			<select>
 			<option selected>선택</option>
@@ -153,7 +153,7 @@
 			<option>폭우/폭설</option>
 			</select>
 		</form>
-		<form id="11am" onchange="updatePage(1);" style="display:none">
+		<form id="11am" onchange="updatePage();" style="display:none">
 			<label>11시의 날씨</label>
 			<select>
 			<option selected>선택</option>
@@ -165,7 +165,7 @@
 			<option>폭우/폭설</option>
 			</select>
 		</form>
-		<form id="12pm" onchange="updatePage(2);" style="display:none">
+		<form id="12pm" onchange="updatePage();" style="display:none">
 			<label>12시의 날씨</label>
 			<select>
 			<option selected>선택</option>
@@ -177,7 +177,7 @@
 			<option>폭우/폭설</option>
 			</select>
 		</form>
-		<form id="1pm" onchange="updatePage(3);" style="display:none">
+		<form id="1pm" onchange="updatePage();" style="display:none">
 			<label>13시의 날씨</label>
 			<select>
 			<option selected>선택</option>
@@ -189,7 +189,7 @@
 			<option>폭우/폭설</option>
 			</select>
 		</form>
-		<form id="2pm" onchange="updatePage(4);" style="display:none">
+		<form id="2pm" onchange="updatePage();" style="display:none">
 			<label>14시의 날씨</label>
 			<select>
 			<option selected>선택</option>
@@ -212,7 +212,7 @@
 			<a class='sns' href='https://www.instagram.com/neol_beun' target='_blank'>Instagram</a>
 		</div>
 		<div>
-			<span>email : neolbeun@gmail.com</span></br>
+			<span>✉️ neolbeun@gmail.com</span></br>
 		</div>
 	</footer>
   </body>
